@@ -84,11 +84,11 @@ void display(struct queue QUEUE)
 int main()
 {
   int choice,x,d;
-  int option=1;
+  
   q.head=-1;
   q.tail=-1;
   printf(" CIRCULAR QUEUE USING ARRAYS -- VARIOUS OPERATIONS \n");
-  while(option)
+  while(1)
   {
   printf("  1 --> ENQUEUE  \n");
   printf("  2 --> DEQUEUE  \n");
@@ -113,8 +113,6 @@ int main()
       return; 
     default: printf("\nInvalid Choice!\n");    
   }
-  fflush(stdin);
-  printf("Do you want to continue?(0:NO 1:YES)\n");
-  scanf("%d",&option);
+  
 }
 }
