@@ -1,4 +1,3 @@
-// #include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 100
@@ -98,7 +97,6 @@ int toPostfix(char* exp)
 
 int main()
 {
-// char expression[] = "((p+(q*r))-s)"; 
     char exp[MAX];
     char *e;
     printf("Enter the expression : ");
@@ -106,7 +104,6 @@ int main()
     printf("\n");
     e = exp;
     toPostfix(e);
-
     return 0; 
 }
  
